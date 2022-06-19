@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Magic Notes</title>
+</head>
+<body>
+<header>
+    <nav>
+    <div class="site-title">
+        <h3>Magic Notes</h3>
+        <p class="subtitle">Home</p>
+    </div>
+    <div  class="search-div" id="s_button">
+        <input type="text" placeholder="Search Notes" oninput="search()" id="search-txt">
+        <p class="btn" id="sbutton">Search</p>
+    </div>
+    </nav>
+</header>
+
+<main>
+    <hr>
+    <h1>Welcome to Magic Notes</h1>
+    <div class="textarea-div">
+        <p class="sub-heading">Add title</p>
+        <input placeholder="Enter title" id="title-input">
+        <p class="sub-heading">Add a Note</p>
+        <textarea id="textarea"></textarea>
+        <br>
+        <button type="button" class="button" id="add_button">Add Note</button>
+    </div>
+    <div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div class = "notes">
+        </div>
+    </div>
+</main>
+<script src="script.js" type="text/javascript" rel="script"></script>
+</body>
+</html>
